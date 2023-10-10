@@ -15,6 +15,7 @@ import Twrnc from "./components/Twrnc";
 import { Zephyr } from "./components/Zephyr";
 import FastStyles from "./components/FastStyles";
 import Unistyles from "./components/Unistyles";
+import Lmnl from "./components/Lmnl";
 
 export default function App() {
   const [styleType, setStyleType] = useState(undefined);
@@ -49,6 +50,8 @@ export default function App() {
         return <FastStyles />;
       case "Unistyles":
         return <Unistyles />;
+      case "Lmnl":
+        return <Lmnl />;
       default:
         return null;
     }
@@ -78,6 +81,7 @@ export default function App() {
       />
       <Button title="Zephyr" onPress={onStyleTypePress("Zephyr")} />
       <Button title="Restyle" onPress={onStyleTypePress("Restyle")} />
+      <Button title="Lmnl" onPress={onStyleTypePress("Lmnl")} />
       <Button
         title="Styled Components"
         onPress={onStyleTypePress("Styled Components")}

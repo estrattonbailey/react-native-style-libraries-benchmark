@@ -2782,6 +2782,14 @@
   resolved "https://registry.yarnpkg.com/@legendapp/tools/-/tools-2.0.1.tgz#995fe6cb3e2398b939f645505aa8e1abc84bd07f"
   integrity sha512-Kxt0HWvWElRK6oybHRzcYxdgaKGwuaiRNreS7usW7QuHXRIHaH4yMcW2YNRG4DHE5fpefv+Bno/BohQcCE4FaA==
 
+"@lmnl/core@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@lmnl/core/-/core-0.1.0.tgz#37203ddf1b3367ab48020de602b659d272b0c102"
+  integrity sha512-B2o7t2t1LYX6PIKaA7jhf5oxNx+a4OvecCPrGJWnTvt7oBm63Vjw+viPFBB4qDDfJ49hm7Bowq5iQ5j/N+fgUg==
+  dependencies:
+    react "^18.2.0"
+    react-native "^0.72.5"
+
 "@motionone/animation@^10.12.0":
   version "10.16.3"
   resolved "https://registry.yarnpkg.com/@motionone/animation/-/animation-10.16.3.tgz#f5b71e27fd8b88b61f983adb0ed6c8e3e89281f9"
@@ -9032,7 +9040,7 @@ react-native-zephyr@1.1.2:
   resolved "https://registry.yarnpkg.com/react-native-zephyr/-/react-native-zephyr-1.1.2.tgz#158417f015287ab743390ed56ce14f85e4c1af80"
   integrity sha512-l2tE58+hfUXynXviYGPl2pqIlfL8B2AshBuje87s0W8+n6vEMNN8H+hGaahrAf5/6TmYqeD+fB3zwCHaqbMPYg==
 
-react-native@0.72.5:
+react-native@0.72.5, react-native@^0.72.5:
   version "0.72.5"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.72.5.tgz#2c343fa6f3ead362cf07376634a33a4078864357"
   integrity sha512-oIewslu5DBwOmo7x5rdzZlZXCqDIna0R4dUwVpfmVteORYLr4yaZo5wQnMeR+H7x54GaMhmgeqp0ZpULtulJFg==
@@ -9143,7 +9151,7 @@ react-style-singleton@^2.2.1:
     invariant "^2.2.4"
     tslib "^2.0.0"
 
-react@18.2.0:
+react@18.2.0, react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
