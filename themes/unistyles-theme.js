@@ -5,6 +5,7 @@ const palette = {
 const theme = {
   colors: {
     red: palette.red,
+    blue: palette.blue,
   },
   spacing: {
     xs: 5,

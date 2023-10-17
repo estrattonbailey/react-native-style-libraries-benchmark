@@ -1,4 +1,5 @@
-import { View } from "react-native";
+import React from 'react'
+import { View, Text, Pressable } from "react-native";
 import { UnistylesTheme, createUnistyles } from 'react-native-unistyles';
 import theme from "../themes/unistyles-theme";
 
@@ -21,16 +22,23 @@ const Unistyles = () => {
     )
 };
 
+const Button = (props) => {
+    const { styles } = useStyles(stylesheet)
+
+    return (
+        <Pressable style={styles.button}>
+            <Text>{props.children}</Text>
+        </Pressable>
+    )
+}
+
 const Demo = () => {
     const { styles } = useStyles(stylesheet)
 
     return (
         <View style={styles.container}>
             {new Array(1000).fill(0).map((_, i) => (
-                <View
-                    key={i}
-                    style={styles.box}
-                />
+                <Button key={i}>{i}</Button>
             ))}
         </View>
     )
@@ -39,12 +47,21 @@ const Demo = () => {
 const stylesheet = createStyles(theme => ({
     container: {
         display: 'flex',
-        flexDirection: 'row'
+        flexDirection: 'row',
+        paddingHorizontal: {
+            xs: theme.spacing.xs,
+            md: theme.spacing.md,
+        }
     },
-    box: {
-        borderColor: theme.colors.red,
-        padding: 5,
-        borderWidth: 2
+    button: {
+        backgroundColor: {
+            xs: theme.colors.red,
+            md: theme.colors.blue,
+        },
+        paddingHorizontal: {
+            xs: theme.spacing.xs,
+            md: theme.spacing.md,
+        }
     }
 }));
 

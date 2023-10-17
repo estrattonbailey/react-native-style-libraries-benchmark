@@ -1,18 +1,29 @@
 import React from "react";
-import { View } from "react-native";
-import { Stack, TamaguiProvider } from "tamagui";
+import { View, Text, Pressable } from "react-native";
+import { Stack, TamaguiProvider, styled } from "tamagui";
 
 import config from "../tamagui.config";
 import { COUNT } from "../utils";
 
+const Button = styled(Pressable, {
+  backgroundColor: 'red',
+  paddingHorizontal: 2,
+  gtMd: {
+    backgroundColor: 'blue',
+    paddingHorizontal: 5,
+  }
+})
+
 const Tamagui = () => {
   return (
     <TamaguiProvider config={config}>
-      <View style={{ display: "flex", flexDirection: "row" }}>
+      <Stack flexDirection='row' paddingHorizontal={2} gtMd={{ paddingHorizontal: 5 }}>
         {new Array(COUNT).fill(0).map((_, i) => (
-          <Stack borderColor="red" borderWidth={2} key={i} padding={5} />
+          <Button key={i}>
+            <Text>{i}</Text>
+          </Button>
         ))}
-      </View>
+      </Stack>
     </TamaguiProvider>
   );
 };
