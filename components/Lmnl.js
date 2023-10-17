@@ -35,17 +35,26 @@ function Button(props) {
 
   return (
     <Pressable style={style}>
-      <Text>{props.children}</Text>
+      {props.children}
     </Pressable>
   )
 }
+
+// const Button = styled(Pressable, {
+//   backgroundColor: 'red',
+//   paddingHorizontal: 'xs',
+//   gtPhone: {
+//     backgroundColor: 'blue',
+//     paddingHorizontal: 'md',
+//   }
+// })
 
 const Lmnl = () => {
   return (
     <ThemeProvider theme='light'>
       <Box flexDirection='row' paddingHorizontal='xs' gtPhone={{ paddingHorizontal: 'md' }} overflow='hidden'>
         {new Array(COUNT).fill(0).map((_, i) => (
-          <Button key={i}>{i}</Button>
+          <Button key={i}><Text>{i}</Text></Button>
         ))}
       </Box>
     </ThemeProvider>
