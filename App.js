@@ -68,6 +68,7 @@ export default function App() {
       <Text style={styles.text}>Tap a style library to start rendering</Text>
       <Button title="React Native" onPress={onStyleTypePress("React Native")} />
       <Button title="ALF" onPress={onStyleTypePress("ALF")} />
+      <Button title="Fast Styles" onPress={onStyleTypePress("FastStyles")} />
       <Button
         title="react-native-unistyles"
         onPress={onStyleTypePress("Unistyles")}

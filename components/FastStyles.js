@@ -1,20 +1,26 @@
-import { View } from "react-native";
+import { View, Pressable, Text } from "react-native";
 import { styled } from "@fast-styles/react";
 import { COUNT } from "../utils";
 
-const FastStylesView = styled(View, {
-  borderColor: "red",
-  borderWidth: 2,
-  padding: 5,
+const Container = styled(View, {
+  flexDirection: 'row',
+  paddingHorizontal: 5,
+});
+
+const FastStylesButton = styled(Pressable, {
+  backgroundColor: 'red',
+  paddingHorizontal: 5,
 });
 
 const FastStyles = () => {
   return (
-    <View style={{ display: "flex", flexDirection: "row" }}>
+    <Container>
       {new Array(COUNT).fill(0).map((_, i) => (
-        <FastStylesView key={i} />
+        <FastStylesButton key={i}>
+          <Text>{i}</Text>
+        </FastStylesButton>
       ))}
-    </View>
+    </Container>
   );
 };
 

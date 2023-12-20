@@ -14,6 +14,7 @@
     "@emotion/native": "11.11.0",
     "@emotion/react": "11.11.1",
     "@expo/webpack-config": "^19.0.0",
+    "@fast-styles/babel-plugin": "^0.2.3",
     "@fast-styles/react": "^0.2.9",
     "@gluestack-style/animation-plugin": "0.1.12",
     "@gluestack-style/react": "0.2.51",
