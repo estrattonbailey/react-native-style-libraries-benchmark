@@ -1,14 +1,13 @@
-import { View } from "react-native";
-import { styled } from "nativewind";
+import { View, Pressable, Text } from "react-native";
 import { COUNT } from "../utils";
-
-const StyledView = styled(View, "border-2 p-1.5 border-red-600");
 
 const NativeWind = () => {
   return (
-    <View style={{ display: "flex", flexDirection: "row" }}>
+    <View className='flex flex-row'>
       {new Array(COUNT).fill(0).map((_, i) => (
-        <StyledView key={i} />
+        <Pressable key={i} className='bg-red-400 px-1 md:px-2'>
+          <Text>{i}</Text>
+        </Pressable>
       ))}
     </View>
   );

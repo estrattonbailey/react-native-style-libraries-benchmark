@@ -13,6 +13,7 @@
   "dependencies": {
     "@emotion/native": "11.11.0",
     "@emotion/react": "11.11.1",
+    "@expo/webpack-config": "^19.0.0",
     "@fast-styles/react": "^0.2.9",
     "@gluestack-style/animation-plugin": "0.1.12",
     "@gluestack-style/react": "0.2.51",
@@ -36,7 +37,7 @@
     "expo-splash-screen": "0.22.0",
     "expo-status-bar": "1.7.1",
     "gluestack-ui": "2.0.1",
-    "nativewind": "2.0.11",
+    "nativewind": "^2.0.11",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.72.5",
